@@ -30,7 +30,7 @@ class ClassTextGenerator:
             string = self.__indent + val
             classTextList.append(string)
 
-        for functionName, data in self.functions:
+        for functionName, data in self.functions.items():
             functionArgsList = ['self']
             if data['args'] is not None:
                 functionArgsList = functionArgsList + data['args']
